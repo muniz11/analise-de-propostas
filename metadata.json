@@ -1,0 +1,6 @@
+{
+  "name": "Analise de proposta",
+  "description": "An application to analyze real estate payment proposals, calculate financial breakdowns, and receive AI-powered discount suggestions based on client offers.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
