@@ -92,8 +92,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     });
 
     const jsonText = response.text.trim();
-    const cleanedJsonText = jsonText.replace(/^```json\s*|```$/g, '');
-    const result = JSON.parse(cleanedJsonText) as DiscountSuggestion;
+    const result = JSON.parse(jsonText) as DiscountSuggestion;
     
     if (
       typeof result.suggestedDiscountPercentage !== 'number' ||
